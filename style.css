@@ -1,0 +1,494 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+html {
+	font-size: 10px;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'lato', sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	color: #1a1a1a;
+	background: -webkit-linear-gradient(#FAFAFA, #FCFCFC);
+	background: linear-gradient(#FAFAFA, #FCFCFC);
+	margin: 0 auto;
+	padding: 0;
+}
+
+a {
+	color: #BB7199;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #cd98b5;
+}
+
+a:active {
+	color: #8a4269;
+}
+
+h1,
+h3 {
+	color: #c33c3c;
+	text-shadow: 0 0 1px #882a2a;
+}
+
+h1 {
+	font-family: 'dancing script', cursive;
+}
+
+h3 {
+	font-size: 2.5rem;
+	margin-top: 0;
+}
+
+.top-wrapper {
+	background-image: url(images/cream_dust_@2X.png);
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	max-width: 1080px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom center;
+	box-shadow: 1px 1px 10px #8a4269;
+}
+
+.nav,
+footer ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.nav li,
+footer ul li {
+	float: left;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.nav li {
+	width: 20%;
+}
+
+.nav li a,
+footer ul li a {
+	padding: 10px 0;
+}
+
+.nav {
+	position: fixed;
+	max-width: 1080px;
+	width: 100%;
+	padding: 10px 0;
+	-webkit-transition: ease all 0.5s;
+	transition: ease all 0.5s;
+	z-index: 10;
+}
+
+.nav.scrolling {
+	background-color: rgba(187, 113, 153,.3);
+}
+
+.nav.scrolling a {
+	color: #FAFAFA;
+}
+
+.nav.scrolling a:hover {
+	color: #ffffff;
+}
+
+.nav.scrolling a:active {
+	color: #f2f2f2;
+}
+
+header {
+	height: 100vh;
+	margin: 0;
+	text-align: center;
+	position: relative;
+}
+
+.berries {
+	background-image: url(images/berries.png);
+	-webkit-transition: ease all 0.5s;
+	transition: ease all 0.5s;
+}
+
+.berries.scrolling {
+	background-image: url(images/berries_scrolling.png);
+}
+
+header h1 {
+	font-size: 10rem;
+	margin: 0;
+	padding: 100px 0 20px;
+}
+
+header h2 {
+	font-weight: 100;
+	color: #BB7199;
+	text-shadow: 0 0 1px #8a4269;
+	font-size: 2.5rem;
+	margin-top: 0;
+}
+
+section {
+	padding-top: 10%;
+	margin: 0 auto;
+	width: 85%;
+	height: 100vh;
+}
+
+.about h5 {
+	font-size: 2rem;
+	margin: 0;
+	color: #BB7199;
+	text-shadow: 0 0 1px #8a4269;
+}
+
+div.headshot {
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding-top: 30px;
+}
+
+.headshot img {
+	width: 100%;
+}
+
+.about .description {
+	float: left;
+	width: 70%;
+	padding-left: 30px;
+}
+
+div.resume {
+	margin-top: 40px;
+	padding: 0;
+}
+
+div.resume a {
+	padding: 15px;
+	color: #BB7199;
+	text-decoration: none;
+	border: 1px solid #8a4269;
+	-webkit-transition:all .5s;
+}
+div.resume a:hover {
+	background: #BB7199;
+	border: 1px solid #8a4269;
+	color: #FAFAFA;
+}
+
+div.resume a:active {
+	color: #ffffff;
+}
+
+.experience .xp {
+	margin: 8% auto;
+}
+
+.xpItem {
+	float: left;
+	width: calc(25% - 15px);
+	text-align: center;
+	margin: 0 15px 15px 0;
+	color: #191919;
+}
+
+.xpItem img {
+	width: 80px;
+	height: 80px;
+	padding: 10px;
+}
+
+.xpItem p {
+	font-size: 1.2rem;
+}
+
+.xpItem h6 {
+	font-size: 1.7rem;
+	color: #8e3e65;
+	margin: 0;
+	padding: 0;
+}
+
+.skillset {
+	float: left;
+	width: 60%;
+}
+
+.skills .descriptionMobile {
+		display: none;
+	}
+
+.skills .description {
+	float: left;
+	width: 40%;
+}
+
+.skill {
+	margin: 0 auto;
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.skillset i {
+	font-size: 60px;
+	color: #BB7199;
+	text-shadow: 1px 0 1px #8a4269;
+}
+
+.contact {
+	height: 90vh;
+}
+
+.contact i {
+	font-size: 30px;
+}
+
+form {
+	background: rgba(205, 152, 181, 0.7);
+	box-shadow: 1px 1px 5px #8a4269;
+}
+
+.socialIcons {
+	float: left;
+	width: 40%;
+}
+
+.socialIcons p.social {
+	float: left;
+	width: 25%;
+}
+
+.formContainer {
+	float: left;
+	width: 60%;
+	margin-bottom: 20px;
+}
+
+form {
+	padding: 15px 0;
+}
+
+input, 
+textarea {
+	height: 60px;
+	width: 90%;
+	border-radius: 5px;
+	background-color: #e6cbda;
+	border: none;
+	padding: 15px;
+	margin: 10px auto;
+	display: block;
+}
+
+textarea {
+	height: 150px;
+	resize: none;
+}
+
+::-webkit-input-placeholder {
+   color: #C17198;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #C17198;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #C17198;  
+}
+
+:-ms-input-placeholder {  
+   color: #C17198;  
+}
+
+input.button {
+	width: 80px;
+	margin: 17px;
+	background-color: #C17198;
+}
+
+input.button:hover {
+	box-shadow: 0 0 5px #cd98b5;
+}
+
+input.button:active {
+	box-shadow: 0 0 5px #8a4269;
+}
+
+footer {
+	height: 50px;
+}
+
+footer ul li {
+	margin: 10px 0 0;
+	padding: 10px 0;
+	width: 33.33%;
+}
+
+@media (max-width: 790px) {
+	body {
+		text-align: center;
+	}
+
+	header h2 {
+		padding: 20px;
+	}
+
+	section {
+		padding-top: 10%;
+		margin: 0 auto;
+		width: 90%;
+		height: auto;
+	}
+
+	div.headshot {
+		float: none;
+		text-align: center;
+		width: 100%;
+		padding: 10px;
+	}
+
+	.headshot img {
+		width: 50%;
+	}
+
+	.about .description {
+		float: none;
+		width: 100%;
+		padding: 10px;
+	}
+
+	.skills {
+		padding: 30px 0;
+	}
+
+	.skillset {
+		float: none;
+		width: 100%;
+	}
+
+	.skills .description {
+		display: none;
+	}
+
+	.skills .descriptionMobile {
+		display: block;
+		padding: 20px;
+	}
+
+	.contact {
+		margin-bottom: 20px;
+		height: 100%;
+	}
+
+	.socialIcons {
+		float: none;
+		width: 100%;
+		margin-bottom: 10px auto;
+	}
+
+	.socialIcons p.social {
+		float: none;
+		width: 10%;
+	}
+
+	.icons {
+		display: flex;
+		justify-content: center;
+	}
+
+	.formContainer {
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	footer {
+		height: 50px;
+		color: #808080;
+	}
+
+	footer ul {
+		float: none;
+	}
+
+	footer ul li {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+
+	}
+}
+
+@media (max-width:590px) {
+	.xpItem {
+		width: calc(50% - 15px);
+	}
+}
+
+@media (max-width:490px) {
+	.wrapper {
+		background-position: center 160px;
+	}
+
+	header h1 {
+		font-size: 6rem;
+		padding: 20px;
+		padding-top: 50px;
+	}
+
+	header h2 {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 10%;
+		font-size: 2rem;
+	}
+
+	.xpItem {
+		float: none;
+		width: 100%;
+	}
+
+	.xpItem p {
+		padding: 5px 20px;
+		font-size: 1.4rem;
+	}
+
+	.skill p {
+		display: none;
+	}
+
+	.skill {
+		width: 25%;
+		padding: 10px;
+	}
+
+	.skill i {
+		font-size: 40px;
+	}
+
+	.formContainer {
+		width: 100%;
+	}
+}
